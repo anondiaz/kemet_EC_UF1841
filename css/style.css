@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amita';
+    src: url('../fonts/Amita-Bold.woff2') format('woff2'),
+        url('../fonts/Amita-Bold.woff') format('woff'),
+        url('../fonts/Amita-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amita';
+    src: url('../fonts/Amita-Regular.woff2') format('woff2'),
+        url('../fonts/Amita-Regular.woff') format('woff'),
+        url('../fonts/Amita-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+  
+:root {
+--width_xl: 1000px;
+--primary_color: #FFE4C4;
+--secondary_color: #63C4EB;
+}
+
+header img {
+width: 100%;
+display: block;
+}
+
+h1, h2 {
+    font-family: Amita, sans-serif;
+}
+header img {
+    width: 100%;
+    display: block;
+    }
