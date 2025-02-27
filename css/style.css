@@ -39,6 +39,8 @@
 --width_xl: 1000px;
 --primary_color: #FFE4C4;
 --secondary_color: #63C4EB;
+--enfasis_color: red;
+--primary_color_transparent: rgb(255, 228, 196) 50%;
 }
 
 header img {
@@ -46,10 +48,60 @@ width: 100%;
 display: block;
 }
 
+.header_logo {
+    position: absolute;
+    left: 4vw;
+    top: 2vw
+}
+
+.desktop_xl {
+    margin: 0 auto;
+    max-width: var(--width_xl);
+  }
+
 h1, h2 {
     font-family: Amita, sans-serif;
 }
-header img {
+
+nav {
+    background-color: var(--primary_color);
+    position: sticky;
+    top: 0px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      list-style: none;
+      padding: 1rem 0;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: inherit;
+      &:hover {
+        border-bottom: 2px solid; /*var(--enfasis_color) */
+        /* color: var(--enfasis_color); */
+      }
+    }
+}
+
+.fondo_transparente {
+    background-color: var(--primary_color);
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+section > div > div > div > img {
     width: 100%;
     display: block;
-    }
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+}
