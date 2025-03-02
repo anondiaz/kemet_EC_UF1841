@@ -67,7 +67,7 @@ main {
 
 h1,
 h2 {
-  font-family: Amita, sans-serif;
+  font-family: Amita, Arial, Helvetica, sans-serif;
   padding-top: 2.25rem;
   font-size: 1.5rem;
   display: flex;
@@ -179,4 +179,40 @@ nav {
 
 
     }
+}
+
+.pie_pagina {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:center ;
+  background-color: var(--primary_color);
+  div {
+    margin: 5px;
+  }
+  p {
+    font-family: Amita, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+  }
+
+}
+
+.logo_pie {
+  img {
+    max-width: 150px;
+    display: block;
+  }
+
+}
+
+.rrss_pie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  img {
+    width: 100%;
+  }
 }
