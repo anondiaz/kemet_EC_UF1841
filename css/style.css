@@ -50,7 +50,7 @@ header img {
 /* Establecemos la imagen de fondo en el tag/selector main */
 
 main {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.avif");
   background-size: cover;
 }
 
