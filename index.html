@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<!-- Ponemos el idioma de la página -->
 <html lang="es">
   <head>
+    <!-- Establecemos los campos meta basicos tabla de carácteres, descripción, keywords, enlaces a los favicon, titulo y hoja de estilos CSS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -16,16 +18,18 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Utilizamos header para poner la cabecera -->
     <header>
+    <!-- Definimos el logo, ubicación y tamaño -->
       <picture class="header_logo">
-        <source media="(max-width: 450px)" srcset="logos/kemet-2.png" />
+        <!-- For mobile, descomentar falta establecer imagen <source media="(max-width: 450px)" srcset="logos/kemet-2.png" /> -->
         <img
           src="logos/Kemet_250px.png"
           alt="Logo de Kemet agencia de viajes"
         />
       </picture>
       <picture>
-        <source media="(max-width: 450px)" srcset="img/esfinx_600x600px.png" />
+        <!-- For mobile, descomentar <source media="(max-width: 450px)" srcset="img/esfinx_600x600px.png" /> -->
         <source media="(max-width: 1000px)" srcset="img/esfinx_1000px.avif" />
         <img
           src="img/esfinx_2000px.avif"
@@ -33,39 +37,53 @@
         />
       </picture>
     </header>
+    <!-- Utilizamos nav para poner el menu -->
     <nav>
+      <!-- Ponemos un div para el multiidioma -->
       <div class="idioma">
-      <a href="index.html"><img
-        src="img/flag-spain-icon.png"
-        alt="Bandera Española"
-      /></a>
-      <a href="index_ca.html"><img
-        src="img/flag-catalonia-icon.png"
-        alt="Bandera Catalana"
-      /></a>
-    </div>
+        <a href="index.html"
+          ><img src="img/flag-spain-icon.png" alt="Bandera Española"
+        /></a>
+        <a href="index_ca.html"
+          ><img src="img/flag-catalonia-icon.png" alt="Bandera Catalana"
+        /></a>
+      </div>
+      <!-- Utilizamos otro div para colocar el menú, los enlaces serán a id de secciones en la misma página -->
       <div>
         <ul class="desktop_xl">
-        <li>
-          <a href="#id_destinos">Destinos</a>
-        </li>
-        <li>
-          <a href="#id_servicios">Servicios</a><!-- tienda.html -->
-        </li>
-        <li>
-          <a href="#id_quienessomos">Quienes somos</a><!-- nosotros.html -->
-        </li>
-      </ul>
-    </div>
+          <li>
+            <a href="#id_destinos">Destinos</a>
+          </li>
+          <li>
+            <a href="#id_servicios">Servicios</a
+            ><!-- Podríamos poner otra página tienda.html -->
+          </li>
+          <li>
+            <a href="#id_quienessomos">Quienes somos</a
+            ><!-- Podríamos poner otra página nosotros.html -->
+          </li>
+        </ul>
+      </div>
     </nav>
+    <!-- Utilizamos main para el contenido -->
     <main>
+      <!-- Utilizamos 3 secciones para definir la página -->
       <section>
+        <!-- En esta seccion ponemos un div para poder estructurar bien el contenido, separamos el titulo de la seccion y los articulos en un h1 y otro div, después añadimos cuatro div, uno para cada articulo -->
         <div class="desktop_xl">
           <h1 id="id_destinos">Destinos</h1>
           <div class="destinos">
             <div>
-              <img src="img/abu-simbel_600px.avif" alt="Imágen de la entrada a Abu Simbel" />
-              <h2><a href="articulos/abu_simbel.html#art_abu-simbel">Abu Simbel</a></h2>
+              <!-- Aquí añadimos primero una imagen, después un titulo con enlace al articulo concreto y el texto descriptivo del articulo, lo repetimos para cada articulo -->
+              <img
+                src="img/abu-simbel_600px.avif"
+                alt="Imágen de la entrada a Abu Simbel"
+              />
+              <h2>
+                <a href="articulos/abu_simbel.html#art_abu-simbel"
+                  >Abu Simbel</a
+                >
+              </h2>
               <p>
                 Cuando llegas a Abu Simbel y te quedas de pie mirando los
                 colosos de roca de la fachada principal eres pequeño, pequeño.
@@ -75,7 +93,8 @@
             </div>
             <div>
               <img src="img/karnak_600px.avif" alt="Imágen de Karnak" />
-              <h2><a href="#">Karnak</a></h2><!-- articulos/karnak.html -->
+              <h2><a href="#">Karnak</a></h2>
+              <!-- articulos/karnak.html -->
               <p>
                 El complejo de Karnak es el conjunto del culto religioso
                 conocido más antiguo del mundo. Un enorme museo al aire libre
@@ -83,7 +102,10 @@
               </p>
             </div>
             <div>
-              <img src="img/nil_600x400.avif" alt="Imágen del Nilo con un velero" />
+              <img
+                src="img/nil_600x400.avif"
+                alt="Imágen del Nilo con un velero"
+              />
               <h2><a href="articulos/nilo.html#art_nilo">El Nilo</a></h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -94,7 +116,8 @@
             </div>
             <div>
               <img src="img/siwa.avif" alt="Imágen del lago de Siwa" />
-              <h2><a href="#">Siwa</a></h2><!-- articulos/siwa.html -->
+              <h2><a href="#">Siwa</a></h2>
+              <!-- articulos/siwa.html -->
               <p>
                 El Oasis de Siwa, un rincón mágico en el corazón del desierto
                 egipcio, emerge como un espejismo en medio de la aridez.
@@ -104,6 +127,7 @@
         </div>
       </section>
       <section class="fondo_transparente">
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
         <div class="desktop_xl">
           <h1 id="id_servicios">Servicios</h1>
           <div class="servicios">
@@ -164,7 +188,10 @@
           <h1 id="id_quienessomos">Quienes somos</h1>
           <div class="quienes_somos">
             <div>
-              <img src="img/equip.jpg" alt="Foto de equipo de gente en sintonía" />
+              <img
+                src="img/equip.jpg"
+                alt="Foto de equipo de gente en sintonía"
+              />
             </div>
             <div>
               <p>
@@ -184,18 +211,23 @@
     <footer>
       <div class="pie_pagina">
         <div class="logo_pie">
-          <img
-            src="logos/Kemet_250px.png"
-            alt="Logo de Kemet agencia de viajes"
-          />
+          <a href="index.html"
+            ><img
+              src="logos/Kemet_250px.png"
+              alt="Logo de Kemet agencia de viajes"
+          /></a>
         </div>
         <div>
           <p>&copy; Kemet, especialistas en Egipto</p>
         </div>
         <div class="rrss_pie">
-          <div><img src="logos/facebook_32.png" alt="Logo de Facebook"/></div>
-          <div><img src="logos/twitter_x_32.png" alt="Logo de Twitter (X)"/></div>
-          <div><img src="logos/instagram_32.png" alt="Logo de Instagram"/></div>
+          <div><img src="logos/facebook_32.png" alt="Logo de Facebook" /></div>
+          <div>
+            <img src="logos/twitter_x_32.png" alt="Logo de Twitter (X)" />
+          </div>
+          <div>
+            <img src="logos/instagram_32.png" alt="Logo de Instagram" />
+          </div>
         </div>
       </div>
     </footer>

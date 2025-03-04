@@ -51,8 +51,7 @@ header img {
 
 main {
   background-image: url("../img/background.png");
-  background-size: contain;
-
+  background-size: cover;
 }
 
 /* Establecemos una posición absoluta al logo, para que siempre este en la misma posición en la página */
@@ -166,7 +165,7 @@ h1 {
   justify-content: space-between;
   row-gap: 1.35rem;
   /* Organizamos cada elemento y establecemos unas medidas */
-  div { 
+  div {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -186,7 +185,7 @@ h1 {
     max-width: 50px;
     max-height: fit-content;
     display: block;
-    padding: 0.25rem;
+    margin: 0.25rem 1rem;
   }
   /* Tamaños colores y alineaciones de los parrafos*/
   p {
@@ -219,7 +218,7 @@ h1 {
   }
 }
 
-/* */
+/* Una clase para el footer  */
 
 .pie_pagina {
   width: 100%;
@@ -243,16 +242,18 @@ h1 {
   }
   /* Definimos una clase para los logos de las redes sociales, utilizamos grid para colocarlas, estableciendo tamaños para las mismas */
   .rrss_pie {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-  img {
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    img {
+      width: 100%;
     }
   }
 }
+
+/* Una clase para el primer bloque del articulo, estableciendo tamaños y ubicaciones de los elementos con flex */
 
 .articulo_foto {
   padding-top: 0.25rem;
@@ -270,9 +271,11 @@ h1 {
   img {
     width: 100%;
     display: block;
-    padding: 0 5px;
+    padding: 5px 5px;
   }
 }
+
+/* Una clase para el segundo bloque del articulo, estableciendo tamaños y ubicaciones de los elementos con flex */
 
 .articulo_foto2 {
   padding-top: 0.25rem;
@@ -281,15 +284,17 @@ h1 {
   flex-flow: row nowrap;
   p {
     font-size: 1.25rem;
-    padding: 2rem;
+    padding: 1.25rem;
   }
   img {
     width: 100%;
     max-width: 300px;
     display: block;
-    padding: 0 5px;
+    padding: 1.25rem 0.25rem;
   }
 }
+
+/* Una clase para el enlace de correo, para que sea algo llamativo usamos la fuente Amita y en el hover ponemos un subrayado */
 
 .contacto {
   p {
@@ -304,5 +309,5 @@ h1 {
     &:hover {
       border-bottom: 2px solid;
     }
-}
+  }
 }

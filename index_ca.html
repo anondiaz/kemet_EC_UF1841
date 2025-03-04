@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<!-- Ponemos el idioma de la página -->
 <html lang="ca">
   <head>
+    <!-- Establecemos los campos meta basicos tabla de carácteres, descripción, keywords, enlaces a los favicon, titulo y hoja de estilos CSS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -16,16 +18,18 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+        <!-- Utilizamos header para poner la cabecera -->
     <header>
+      <!-- Definimos el logo, ubicación y tamaño -->
       <picture class="header_logo">
-        <source media="(max-width: 450px)" srcset="logos/kemet-2.png" />
-        <img
+          <!-- For mobile, descomentar falta establecer imagen <source media="(max-width: 450px)" srcset="logos/kemet-2.png" /> -->
+         <img
           src="logos/Kemet_250px.png"
           alt="Logo de Kemet agencia de viatges"
         />
       </picture>
       <picture>
-        <source media="(max-width: 450px)" srcset="img/esfinx_600x600px.png" />
+        <!-- For mobile, descomentar <source media="(max-width: 450px)" srcset="img/esfinx_600x600px.png" /> -->
         <source media="(max-width: 1000px)" srcset="img/esfinx_1000px.avif" />
         <img
           src="img/esfinx_2000px.avif"
@@ -33,50 +37,75 @@
         />
       </picture>
     </header>
+    <!-- Utilizamos nav para poner el menu -->
     <nav>
+      <!-- Ponemos un div para el multiidioma -->
       <div class="idioma">
-        <a href="index.html"><img
-          src="img/flag-spain-icon.png"
-          alt="Bandera Espanyola"
+        <a href="index.html"
+          ><img src="img/flag-spain-icon.png" alt="Bandera Espanyola"
         /></a>
-        <a href="index_ca.html"><img
-          src="img/flag-catalonia-icon.png"
-          alt="Senyera Catalana"
+        <a href="index_ca.html"
+          ><img src="img/flag-catalonia-icon.png" alt="Senyera Catalana"
         /></a>
       </div>
+      <!-- Utilizamos otro div para colocar el menú, los enlaces serán a id de secciones en la misma página -->
+       <div>
       <ul class="desktop_xl">
         <li>
           <a href="#id_destinacions">Destinacions</a>
         </li>
         <li>
-          <a href="#id_serveis">Serveis</a> <!-- botiga_ca.html -->
+          <a href="#id_serveis">Serveis</a>
+          <!-- Podríamos poner otra página botiga_ca.html -->
         </li>
         <li>
-          <a href="#id_quisom">Qui som</a><!-- nosaltres_ca.html -->
+          <a href="#id_quisom">Qui som</a
+          ><!-- Podríamos poner otra página nosaltres_ca.html -->
         </li>
       </ul>
+    </div>
     </nav>
+    <!-- Utilizamos main para el contenido -->
     <main>
+      <!-- Utilizamos 3 secciones para definir la página -->
       <section>
+        <!-- En esta seccion ponemos un div para poder estructurar bien el contenido, separamos el titulo de la seccion y los articulos en un h1 y otro div, después añadimos cuatro div, uno para cada articulo -->
         <div class="desktop_xl">
           <h1 id="id_destinacions">Destinacions</h1>
           <div class="destinos">
             <div>
-              <img src="img/abu-simbel_600px.avif" alt="Imatge de la entrada a Abu Simbel" />
-              <h2><a href="articulos/abu_simbel.html#art_abu-simbe">Abu Simbel</a></h2>
+              <!-- Aquí añadimos primero una imagen, después un titulo con enlace al articulo concreto y el texto descriptivo del articulo, lo repetimos para cada articulo -->
+              <img
+                src="img/abu-simbel_600px.avif"
+                alt="Imatge de la entrada a Abu Simbel"
+              />
+              <h2>
+                <a href="articulos/abu_simbel.html#art_abu-simbel"
+                  >Abu Simbel</a
+                >
+              </h2>
               <p>
-                Quan arribes a Abu Simbel i et quedes dret mirant els colossos de roca de la façana principal ets fas petit, petit. L'experiència s'ha de viure. La mirada se'n va més enllà de 3.200 anys enrere.
+                Quan arribes a Abu Simbel i et quedes dret mirant els colossos
+                de roca de la façana principal ets fas petit, petit.
+                L'experiència s'ha de viure. La mirada se'n va més enllà de
+                3.200 anys enrere.
               </p>
             </div>
             <div>
               <img src="img/karnak_600px.avif" alt="Imatge de Karnak" />
-              <h2><a href="#">Karnak</a></h2><!-- articulos/karnak.html -->
+              <h2><a href="#">Karnak</a></h2>
+              <!-- articulos/karnak.html -->
               <p>
-                El complex de Karnak és el conjunt del culte religiós conegut més antic del món. Un museu enorme a l'aire lliure mostra importants restes de la cultura de l'antic Egipte.
+                El complex de Karnak és el conjunt del culte religiós conegut
+                més antic del món. Un museu enorme a l'aire lliure mostra
+                importants restes de la cultura de l'antic Egipte.
               </p>
             </div>
             <div>
-              <img src="img/nil_600x400.avif" alt="Imatge del Nil amb un veler" />
+              <img
+                src="img/nil_600x400.avif"
+                alt="Imatge del Nil amb un veler"
+              />
               <h2><a href="articulos/nilo.html#art_nilo">El Nil</a></h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -87,9 +116,11 @@
             </div>
             <div>
               <img src="img/siwa.avif" alt="Imatge del llac de Siwa" />
-              <h2><a href="#">Siwa</a></h2><!-- articulos/siwa.html -->
+              <h2><a href="#">Siwa</a></h2>
+              <!-- articulos/siwa.html -->
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam sunt eius dolor voluptatem blanditiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis aliquam sunt eius dolor voluptatem blanditiis!
               </p>
             </div>
           </div>
@@ -103,42 +134,48 @@
               <img src="icons/alojamientos.webp" alt="Icona d'allotjament" />
               <h2>Allotjaments premium</h2>
               <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, est unde reiciendis facere doloremque similique.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi, est unde reiciendis facere doloremque similique.
               </p>
             </div>
             <div>
               <img src="icons/transporte.webp" alt="Icona de transport" />
               <h2>Transport privat</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo, aliquid hic tenetur harum praesentium.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias explicabo, aliquid hic tenetur harum praesentium.
               </p>
             </div>
             <div>
               <img src="icons/destinos.webp" alt="Icona de destinacions" />
               <h2>Destinacions al teu gust</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ab repudiandae at, ad aperiam corporis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                ab repudiandae at, ad aperiam corporis.
               </p>
             </div>
             <div>
               <img src="icons/gastronomia.webp" alt="Icona de gastronomia" />
               <h2>Gastronomia exquisida</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit maiores non voluptates fugiat at?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                sit maiores non voluptates fugiat at?
               </p>
             </div>
             <div>
               <img src="icons/guias.webp" alt="Icona de guias" />
               <h2>Acompanyament total</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto dolor quisquam natus, ullam magnam iure.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                iusto dolor quisquam natus, ullam magnam iure.
               </p>
             </div>
             <div>
               <img src="icons/papeleo.webp" alt="Icona de paperassa" />
               <h2>Ajuda amb la paperassa</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam officiis debitis ullam nostrum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                laboriosam officiis debitis ullam nostrum.
               </p>
             </div>
           </div>
@@ -169,18 +206,23 @@
     <footer>
       <div class="pie_pagina">
         <div class="logo_pie">
-          <img
-            src="logos/Kemet_250px.png"
-            alt="Logo de Kemet agencia de viatges"
-          />
+          <a href="index_ca.html"
+            ><img
+              src="logos/Kemet_250px.png"
+              alt="Logo de Kemet agencia de viatges"
+          /></a>
         </div>
         <div>
           <p>&copy; Kemet, especialistes en Egipte</p>
         </div>
         <div class="rrss_pie">
-          <div><img src="logos/facebook_32.png" alt="Logo de Facebook"/></div>
-          <div><img src="logos/twitter_x_32.png" alt="Logo de Twitter (X)"/></div>
-          <div><img src="logos/instagram_32.png" alt="Logo de Instagram"/></div>
+          <div><img src="logos/facebook_32.png" alt="Logo de Facebook" /></div>
+          <div>
+            <img src="logos/twitter_x_32.png" alt="Logo de Twitter (X)" />
+          </div>
+          <div>
+            <img src="logos/instagram_32.png" alt="Logo de Instagram" />
+          </div>
         </div>
       </div>
     </footer>
